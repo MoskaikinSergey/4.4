@@ -10,7 +10,6 @@ public class StudentWithClock implements Learner {
 
     @Override
     public void learn() {
-        long start = System.currentTimeMillis();
         learner.learn();
         LocalTime time = LocalTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
